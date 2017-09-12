@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="portfolio-style.css"/>
+  <script src="jquery.particleground.js"></script>
+  <title>CalinScripts // MArtzDEV</title>
+</head>
+<body>
+  <script>
+  function sleep(ms){
+    return new Promise(resolve => setTimeout(resolve,ms));
+  }
+  async function fadeElements(){
+    $("#fade").fadeOut(1);
+    $("#fade").fadeIn(2000);
+  }
+  window.onload = fadeElements;
+  </script>
+  <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu-navigation">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"><font color="#45a0ef">CalinScripts</font></a>
+        </div>
+        <div class="navbar-collapse collapse" id="menu-navigation">
+        <ul class="nav navbar-nav" id="menu-navigation">
+          <li><a href="index.html">Meniu</a></li>
+          <li class="active"><a>Portofoliu</a></li>
+          <li><a href="contact.html">Contacteaza-ma</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid" id="fade">
+      <div class="jumbotron">
+        <div class="about-me" id="fade1">
+          <br><br><h1><i><strong>Despre</strong></h1></i><br>
+            <p>updateaza
+        </div>
+        <div class="project-showcase" id="fade2">
+          <br><br><h1><i><strong>Proiecte</strong></h1></i><br>
+          <p>updateaza 2</p>
+          <br><h2>Proiect</h2><br>
+          <p>updateaza proiect <a href="https://google.ro">aici</a></p>
+          <br><h2>Proiect 2</h2><br>
+          <p>updateaza proiect 2<br>detalii proiect 2</p>
+          <br><h2>Proiect 3</h2><br>
+          <p>updateaza proiect 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="branding">
+    <a href="https://www.instagram.com/mihai.sturza"><img src="instagram.png" height="30px" width="30px"/></a>
+    <a href="https://www.facebook.com/calinphy"><img src="facebook.png" height="30px" width="30px"/></a>
+  </div>
+</body>
+</html>
